@@ -1,0 +1,51 @@
+{
+  "name": "@cxfjh/ridom",
+  "private": false,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "零依赖的响应式 DOM 框架：Proxy 驱动、直写真实 DOM、无虚拟 DOM、无需构建工具，内置 8 个指令、组件系统与 SPA 路由，gzip 13 KB",
+  "keywords": [
+    "@cxfjh",
+    "ridom",
+    "reactive",
+    "dom-framework",
+    "micro-framework",
+    "zero-dependency",
+    "no-virtual-dom",
+    "no-build",
+    "proxy-based",
+    "data-binding",
+    "spa-router",
+    "directives",
+    "shadow-dom"
+  ],
+  "author": "cxfjh[2449579731@qq.com]",
+  "license": "MIT",
+  "module": "./dist/es.0.1.0.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/*.js",
+    "dist/**/*.d.ts"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/es.0.1.0.js"
+    },
+    "./package.json": "./package.json",
+    "./dist/*": "./dist/*"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.5",
+    "happy-dom": "^21.0.4",
+    "typescript": "^6.0.3",
+    "vite": "8.3.3",
+    "vite-plugin-dts": "^5.1.0"
+  }
+}
